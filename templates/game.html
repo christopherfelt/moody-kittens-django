@@ -1,0 +1,41 @@
+{% extends "_base.html" %}
+{% load static %}
+    
+    
+{% block content %}
+
+  <header class="bg-dark d-flex align-items-center p-1 space-between">
+    <a href="#"><img src="{% static 'images/moody-logo.png' %}" height="60" alt="Moody Kittens" /></a>
+    <form class="" method="POST" action="">
+      <div class="d-flex">
+        <input placeholder="Name" type="text" name="name" />
+        <button class="btn-special" type="submit">
+          /ᐠ｡ꞈ｡ᐟ\
+        </button>
+      </div>
+    </form> 
+  </header>
+
+  <main class="container">
+
+    <div class="p-2">
+      <div id="kittens" class="d-flex align-items-center flex-wrap">
+
+      </div>
+    </div>
+  </main>
+
+
+  <footer
+    class="card bg-dark text-light p-2 d-flex align-items-center justify-content-center"
+  >
+    <small
+      >Created with <span style="color: var(--primary)">&hearts;</span> by
+      Chris</small
+    >
+  </footer>
+    
+
+    <script src="{% static 'js/app.js' %}"></script>
+
+{% endblock content %}
